@@ -1,1 +1,110 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TEESKOLAR Order Form</title><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="brand-block"><a href="index.html"><img class="brand-logo" src="assets/teeskolar-logo.png" alt="TEESKOLAR logo"></a><div><p class="brand-name">TEESKOLAR</p><p class="tagline">Wearing a brighter future</p></div></div></header><nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="dont-be-late.html">Don't Be Late</a><a href="everyday-comfort.html">Everyday Comfort</a><a href="do-good-work.html">Do Good Work</a></nav><main><div class="order-card"><header><h1>Order Form</h1><a class="back-link" href="index.html">Back to Shop</a></header><form id="orderForm"><div class="form-group"><label class="form-label" for="customerName">Full Name</label><input class="form-control" id="customerName" required autocomplete="name"></div><div class="form-group"><label class="form-label" for="customerEmail">Email Address</label><input class="form-control" id="customerEmail" type="email" required autocomplete="email"></div><div class="form-group"><label class="form-label" for="contact">Contact Number</label><input class="form-control" id="contact" type="tel" required autocomplete="tel"></div><div class="form-group"><label class="form-label" for="address">Delivery Address</label><textarea class="form-control" id="address" rows="2" required autocomplete="street-address"></textarea></div><div class="form-group"><label class="form-label" for="productName">Product</label><select class="form-select" id="productName" required><option value="">Choose product</option><option value="dont-be-late">Don't Be Late (Semi-Ringer Tee)</option><option value="everyday-comfort">Everyday Comfort (Crew Neck T-Shirt)</option><option value="do-good-work">Do Good Work (Baggy T-Shirt)</option></select></div><div class="form-row"><div class="form-group"><label class="form-label" for="size">Size</label><select class="form-select" id="size" required><option value="">Choose size</option></select></div><div class="form-group"><label class="form-label" for="color">Color</label><select class="form-select" id="color" required><option value="">Choose color</option><option>White</option><option>Yellow</option><option>Maroon</option><option>Red</option></select></div></div><div class="form-group"><label class="form-label" for="quantity">Quantity (maximum 5)</label><select class="form-select" id="quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div><div class="form-group"><label class="form-label" for="price">Price per shirt</label><input class="form-control" id="price" value="PHP 399" readonly></div><div class="form-group"><label class="form-label" for="total">Total</label><input class="form-control" id="total" readonly></div><div class="form-group"><label class="form-label" for="notes">Additional notes (optional)</label><textarea class="form-control" id="notes" rows="2"></textarea></div><button class="submit-btn" type="submit">Send Order Through Email</button></form><p class="small-note">Submitting opens your email app with order details. Please press Send in your email app.</p></div></main><footer class="footer"><p>© 2026 TEESKOLAR. All Rights Reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms and Conditions</a></p></footer><script src="order.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>TEESKOLAR Order Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="brand-block">
+                <a href="index.html">
+                    <img class="brand-logo" src="assets/teeskolar-logo.png" alt="TEESKOLAR logo">
+                </a>
+                <div>
+                    <p class="brand-name">TEESKOLAR</p>
+                    <p class="tagline">Wearing a brighter future</p>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="dont-be-late.html">Don't Be Late</a>
+            <a href="everyday-comfort.html">Everyday Comfort</a>
+            <a href="do-good-work.html">Do Good Work</a>
+        </nav>
+        <main>
+            <div class="order-card">
+                <header>
+                    <h1>Order Form</h1>
+                    <a class="back-link" href="index.html">Back to Shop</a>
+                </header>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label class="form-label" for="customerName">Full Name</label>
+                        <input class="form-control" id="customerName" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="customerEmail">Email Address</label>
+                        <input class="form-control" id="customerEmail" type="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contact">Contact Number</label>
+                        <input class="form-control" id="contact" type="tel" required autocomplete="tel">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="address">Delivery Address</label>
+                        <textarea class="form-control" id="address" rows="2" required autocomplete="street-address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="productName">Product</label>
+                        <select class="form-select" id="productName" required>
+                            <option value="">Choose product</option>
+                            <option value="dont-be-late">Don't Be Late (Semi-Ringer Tee)</option>
+                            <option value="everyday-comfort">Everyday Comfort (Crew Neck T-Shirt)</option>
+                            <option value="do-good-work">Do Good Work (Baggy T-Shirt)</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="size">Size</label>
+                            <select class="form-select" id="size" required>
+                                <option value="">Choose size</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="color">Color</label>
+                            <select class="form-select" id="color" required>
+                                <option value="">Choose color</option>
+                                <option>White & Yellow</option>
+                                <option>Sunset Yellow Tie-Dye</option>
+                                <option>Maroon</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="quantity">Quantity (maximum 5)</label>
+                        <select class="form-select" id="quantity">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="price">Price per shirt</label>
+                        <input class="form-control" id="price" value="PHP 399" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="total">Total</label>
+                        <input class="form-control" id="total" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="notes">Additional notes (optional)</label>
+                        <textarea class="form-control" id="notes" rows="2"></textarea>
+                    </div>
+                    <button class="submit-btn" type="submit">Send Order Through Email</button>
+                </form>
+                <p class="small-note">Submitting opens your email app with order details. Please press Send in your email app.</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>
+                © 2026 TEESKOLAR. All Rights Reserved. &nbsp;|&nbsp;<a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;<a href="terms.html">Terms and Conditions</a>
+            </p>
+        </footer>
+        <script src="order.js"></script>
+    </body>
+</html>
